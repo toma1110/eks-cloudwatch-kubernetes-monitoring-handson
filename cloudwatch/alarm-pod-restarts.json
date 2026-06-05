@@ -1,0 +1,23 @@
+{
+  "AlarmName": "eks-cw-handson-pod-restarts",
+  "AlarmDescription": "Sample alarm for Container Insights pod restart count. Replace CLUSTER_NAME and NAMESPACE before use.",
+  "Namespace": "ContainerInsights",
+  "MetricName": "pod_number_of_container_restarts",
+  "Dimensions": [
+    {
+      "Name": "ClusterName",
+      "Value": "CLUSTER_NAME"
+    },
+    {
+      "Name": "Namespace",
+      "Value": "sample-observability"
+    }
+  ],
+  "Statistic": "Sum",
+  "Period": 300,
+  "EvaluationPeriods": 1,
+  "DatapointsToAlarm": 1,
+  "Threshold": 1,
+  "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+  "TreatMissingData": "notBreaching"
+}

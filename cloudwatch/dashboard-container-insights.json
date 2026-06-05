@@ -1,0 +1,48 @@
+{
+  "widgets": [
+    {
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 2,
+      "properties": {
+        "markdown": "# EKS CloudWatch Monitoring Hands-on\nCluster: CLUSTER_NAME"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 2,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "region": "ap-northeast-1",
+        "title": "Node CPU utilization",
+        "view": "timeSeries",
+        "metrics": [
+          ["ContainerInsights", "node_cpu_utilization", "ClusterName", "CLUSTER_NAME"]
+        ],
+        "stat": "Average",
+        "period": 300
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 2,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "region": "ap-northeast-1",
+        "title": "Pod restarts",
+        "view": "timeSeries",
+        "metrics": [
+          ["ContainerInsights", "pod_number_of_container_restarts", "ClusterName", "CLUSTER_NAME", "Namespace", "sample-observability"]
+        ],
+        "stat": "Sum",
+        "period": 300
+      }
+    }
+  ]
+}

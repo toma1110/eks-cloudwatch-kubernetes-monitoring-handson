@@ -1,0 +1,6 @@
+apiVersion: v2
+name: sample-app
+description: Sample web workload for EKS CloudWatch monitoring practice.
+type: application
+version: 0.1.0
+appVersion: "1.27"
