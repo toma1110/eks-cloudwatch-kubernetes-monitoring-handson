@@ -119,6 +119,8 @@ export CLUSTER_NAME=eks-cw-handson
 export APP_NAMESPACE=sample-observability
 ```
 
+<a id="precheck-list"></a>
+
 ## 事前チェックリスト
 
 AWSリソースを作る前に、ローカル環境と入力値だけを確認します。
