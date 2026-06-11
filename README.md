@@ -119,9 +119,10 @@ export CLUSTER_NAME=eks-cw-handson
 export APP_NAMESPACE=sample-observability
 ```
 
-## 事前チェック
+## 事前チェックリスト
 
 AWSリソースを作る前に、ローカル環境と入力値だけを確認します。
+ツールが未導入の場合は、先に [インストール手順の参考](#インストール手順の参考) を確認してください。
 
 ```bash
 bash scripts/validate.sh
