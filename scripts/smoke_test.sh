@@ -23,7 +23,7 @@ aws cloudwatch list-metrics \
   --region "$AWS_REGION" \
   --namespace ContainerInsights \
   --dimensions "Name=ClusterName,Value=$CLUSTER_NAME" \
-  --max-results 20 \
+  --max-items 20 \
   --output table
 
 echo "== CloudWatch logs =="
